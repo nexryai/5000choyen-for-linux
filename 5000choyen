@@ -1,0 +1,18 @@
+#! /usr/bin/env bash
+
+if [ -z "$2" ]; then
+    echo "引数が不足しています"
+    exit 1
+else
+    echo $1 $2
+fi
+
+wget "http://5000choyen.app.cyberrex.ml/image?top=$1&bottom=$2" -O $1.png
+
+if [ $? = 0 ]; then
+    echo "正常に取得しました"
+    exit
+else
+    echo "エラー: wgetが終了コード$?で終了しました。失敗しました。" 
+    exit 1
+fi
