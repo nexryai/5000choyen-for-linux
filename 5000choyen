@@ -20,10 +20,10 @@ if [ -z "$2" ]; then
     echo "引数が不足しています"
     exit 1
 else
-    echo $1 $2
+    echo "$1 $2"
 fi
 
-wget "http://5000choyen.app.cyberrex.ml/image?top=$1&bottom=$2" -O $1$2.png -q
+wget "http://5000choyen.app.cyberrex.ml/image?top=$1&bottom=$2" -O "$1$2.png" -q
 
 if [ $? = 0 ]; then
     echo "正常に取得しました"
