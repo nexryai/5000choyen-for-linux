@@ -24,6 +24,8 @@ else
 fi
 
 wget "https://gsapi.cyberrex.ml/image?top=$1&bottom=$2" -O "$1$2.png" -q
+
+# http版 問題が発生した場合用。それ以外の場合は非推奨。
 # wget "http://5000choyen.app.cyberrex.ml/image?top=$1&bottom=$2" -O "$1$2.png" -q
 
 if [ $? = 0 ]; then
