@@ -7,7 +7,7 @@
 カレントディレクトリに `hogefuge.png` がダウンロードされます。wgetコマンドが利用できる環境が必要です。
 
 ## 使用API
-Powered by 5000choyen-api
+Powered by 5000choyen-api (https://github.com/CyberRex0/5000choyen-api)
 
 ## ToDo
 オプションを指定できるようにする
